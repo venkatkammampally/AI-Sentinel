@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Surveillance Dashboard</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+
+    <header>
+        <h1>AI Crowd & Crime Monitoring System</h1>
+        <p>Smart CCTV Surveillance using Artificial Intelligence</p>
+    </header>
+
+    <section class="controls">
+        <h2>Upload CCTV Footage</h2>
+        <input type="file" id="videoUpload" accept="video/*">
+        <button onclick="startProcessing()">Start Monitoring</button>
+    </section>
+
+    <section class="dashboard">
+        <div class="card">
+            <h3>People Count</h3>
+            <p id="peopleCount">0</p>
+        </div>
+        <div class="card">
+            <h3>Threat Alerts</h3>
+            <p id="threatCount">0</p>
+        </div>
+        <div class="card">
+            <h3>Work Violations</h3>
+            <p id="violationCount">0</p>
+        </div>
+    </section>
+
+    <section class="alerts">
+        <h2>Live Alerts</h2>
+        <ul id="alertList">
+            <li>No alerts yet</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2026 AI Surveillance Project | Built with AI & Computer Vision</p>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>

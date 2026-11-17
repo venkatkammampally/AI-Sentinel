@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #0f172a;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+header h1 {
+    margin: 0;
+    color: #38bdf8;
+}
+
+.controls {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.controls input {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    background: #38bdf8;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.controls button:hover {
+    background: #0ea5e9;
+}
+
+.dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(56,189,248,0.3);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #38bdf8;
+}
+
+.card p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.alerts {
+    width: 60%;
+    margin: auto;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.alerts h2 {
+    color: #f87171;
+}
+
+#alertList {
+    list-style: none;
+    padding: 0;
+}
+
+#alertList li {
+    padding: 8px;
+    margin: 5px 0;
+    background: #334155;
+    border-left: 5px solid #f87171;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    background: #1e293b;
+}
+
